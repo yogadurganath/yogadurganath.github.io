@@ -1,0 +1,51 @@
+
+#picDiv{
+    width: 10vw;
+    float: left;
+    margin: 5vmin;
+    margin-left: 6vmin;
+    position: relative;    
+}
+#contact{
+    margin: 5vmin;
+    float: right;
+    padding-right: 2vmin;
+}
+#cont1{
+height: 25vh;
+}
+#container1{
+    background-color: #1A535C;
+    padding: 2vmin;
+}
+#container2{
+    background-color: #4ECDC4;
+    padding: 2vmin;
+}#container3{
+    background-color: #F7FFF7;
+    padding: 2vmin;
+}#container4{
+    background-color: #FF6B6B;
+    padding: 2vmin;
+}#container5{
+    background-color: #FFE66D;
+    padding: 2vmin;
+}#container6{
+    background-color: #1A535C;
+    padding: 2vmin;
+}
+#container6 h6,#container6 h5{
+    color: white;
+}
+.progress{
+    margin: 2vmin 0 2vmin 0;
+}
+
+#picDiv img{
+    width: 10vmax;
+}
+ @media only screen and (max-width: 768px) {
+    #cont1 {
+        height: 17vh;
+    }
+}
