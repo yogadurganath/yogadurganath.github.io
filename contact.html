@@ -8,10 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
     <title>YOGIDESINA|DESINA YOGA DURGA NATH</title>
 </head>
 
@@ -90,39 +92,39 @@
                     <h3 class="mb-0">Contact</h3>
                 </div>
                 <div class="card-body">
-                    <form class="form" role="form" autocomplete="off" action="https://smartforms.dev/submit/5d5af094d42c7a57ab3270bb" method="POST">
+                    <form class="form" id="contactForm" role="form" autocomplete="off" action="https://smartforms.dev/submit/5d5af094d42c7a57ab3270bb" method="POST">
                         <fieldset>
-                            <label for="name2" class="mb-0">Name</label>
+                            <label for="for="nameCF"" class="mb-0">Name</label>
                             <div class="row mb-1">
                                 <div class="col-lg-12">
-                                    <input type="text" name="name" id="name" class="form-control" required="">
+                                    <input type="text" name="name" id="nameCF" class="form-control" required="">
                                 </div>
                             </div>
-                            <label for="email2" class="mb-0">Email</label>
+                            <label for="cemail" class="mb-0">Email</label>
                             <div class="row mb-1">
                                 <div class="col-lg-12">
-                                    <input type="text" name="email" id="email" class="form-control" required="">
+                                    <input type="email" name="email" id="cemail" class="form-control" required="">
                                 </div>
                             </div>
-                            <label for="name2" class="mb-0">Company</label>
+                            <label for="companyCF" class="mb-0">Company</label>
                             <div class="row mb-1">
                                 <div class="col-lg-12">
-                                    <input type="text" name="company" id="name2" class="form-control" >
+                                    <input type="text" name="company" id="companyCF" class="form-control" >
                                 </div>
                             </div>
-                            <label for="message2" class="mb-0">Reason for Reaching Out.</label>
+                            <label for="reasonCF" class="mb-0">Reason for Reaching Out.</label>
                             <div class="row mb-1">
                                 <div class="col-lg-12">
-                                    <textarea rows="6" name="reason" id="reason" class="form-control" required=""></textarea>
+                                    <textarea rows="6" name="reason" id="reasonCF" class="form-control" required=""></textarea>
                                 </div>
                             </div>
-                            <label for="message2" class="mb-0">Message</label>
+                            <label for="messageCF" class="mb-0">Message</label>
                             <div class="row mb-1">
                                 <div class="col-lg-12">
-                                    <textarea rows="6" name="message" id="message" class="form-control" required=""></textarea>
+                                    <textarea rows="6" name="message" id="messageCF" class="form-control" required=""></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-secondary btn-lg float-right">Send Message</button>
+                             <button class="btn btn-primary" type="submit">Send Message</button>
                         </fieldset>
                     </form>
                 </div>
@@ -175,6 +177,17 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <!-- <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js" ></script> -->
+        <script>
+        // bootstrapValidate('#emailCF', 'email:Enter a valid E-Mail!')
+        // bootstrapValidate('#nameCF', 'required:Please enter name')
+        // bootstrapValidate('#reasonCF', 'required:Please fill out this field!')
+        // bootstrapValidate('#messageCF', 'required:Please fill out this field!')
+
+        $("#contactForm").validate();
+        
+        </script>
 </body>
 
 </html>
