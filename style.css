@@ -24,7 +24,7 @@ html { scroll-behavior: smooth; overflow-y: scroll; overflow-x:hidden; }
  }
  .intro{
 
-  background-image: url('\img/intro-bg4.jpg');
+  background-image: url('/img/intro-bg4.jpg');
   background-size:100vw 100vh;
 }
 .flex {
@@ -194,7 +194,7 @@ html { scroll-behavior: smooth; overflow-y: scroll; overflow-x:hidden; }
       box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     }
     .intro{
-      background-image: url('\img/intro-bg-mbl.jpg');
+      background-image: url('/img/intro-bg-mbl.jpg');
     }
     .introtext
     {
