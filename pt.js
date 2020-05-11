@@ -16,7 +16,7 @@ Pts.quickStart( "#pt", "transparent" );
   class Confetti extends Pt {
     constructor( ...args ) {
       super( ...args );
-      this.color = ["#f03", "#09f", "#0c6", "#fff"][ Util.randomInt(4) ];
+      this.color = ["#f03", "#09f", "#0c6", "#fff","#fbff00"][ Util.randomInt(5) ];
       this.size = Math.random()*1+2;
       this.angle = Math.random() * Const.two_pi;
       this.dir = (Math.random() > 0.5) ? 1 : -1;

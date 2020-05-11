@@ -1,6 +1,10 @@
 html { scroll-behavior: smooth; overflow-y: scroll; overflow-x:hidden; }
+p{hyphens:auto}
 .navbar {
    height:9vh;
+}
+.txt-int{
+  text-indent: 2em;
 }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
