@@ -129,13 +129,7 @@ p{hyphens:auto}
                background-color:rgb(0, 0, 0);
                opacity: unset;
              }
-              #contact{
-               border-top: 50px solid transparent;
-               margin-top: -50px;
-               -webkit-background-clip: padding-box;
-               -moz-background-clip: padding;
-               background-clip: padding-box;
-              }
+           
               #sticky-footer {
                
                height: 8vh;
