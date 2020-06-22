@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-
-
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
@@ -17,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="gallery-grid.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
 
     <title>YOGIDESINA|DESINA YOGA DURGA NATH</title>
 </head>
@@ -143,16 +140,32 @@
 
 
         <h3 class="text-center my-3">Graphics Design Works</h3>
-        <div class="row mx-5">
-            <div class="col-sm"><a href="#vstcds">Visiting cards</a></div>
-            <div class="col-sm"><a href="#wrkshp">Workshops/Events</a></div>
-            <div class="col-sm"><a href="#wlps">Wall posters</a></div>
-            <div class="col-sm"><a href="#looogos">Logos</a></div>
+        <div class="row mx-4 my-5">
+            <div class="col-sm">
+                <a href="#vstcds">
+                    <h4>Visiting cards</h4>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="#wrkshp">
+                    <h4>Workshops/Events</h4>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="#wlps">
+                    <h4>Wall posters</h4>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="#looogos">
+                    <h4>Logos</h4>
+                </a>
+            </div>
 
         </div>
 
-        <p class="page-description text-center" id="vstcds">Visiting cards</p>
-        <p class="gallery_title ml-5">Nutz n bolts <span class="event_details">&nbsp; Mechanical dept. synposium</span></p>
+        <h4 class="page-description text-center ascrolllink" id="vstcds">Visiting cards</h4>
+        <!-- <p class="gallery_title ml-5">Nutz n bolts <span class="event_details">&nbsp; Mechanical dept. synposium</span></p> -->
         <div class="tz-gallery">
 
             <div class="row">
@@ -179,7 +192,7 @@
 
         </div>
 
-        <p class="page-description text-center" id="wrkshp">Workshops</p>
+        <h4 class="page-description text-center ascrolllink" id="wrkshp">Workshops</h4>
         <p class="gallery_title ml-5">Nutz n bolts <span class="event_details">&nbsp; Mechanical dept. synposium</span></p>
         <div class="tz-gallery">
 
@@ -219,7 +232,9 @@
 
         </div>
 
-        <p class="page-description text-center" id="wlps">Wall posters</p>
+        <h4 class="page-description text-center ascrolllink" id="wlps">
+            Wall posters
+        </h4>
         <p class="gallery_title ml-5">Cyber Security and Networking<span class="event_details">&nbsp; Lab Posters</span></p>
         <div class="tz-gallery">
 
@@ -287,8 +302,8 @@
             </div>
 
         </div>
-        <p class="page-description text-center" id="looogos">Logos</p>
-        <p class="gallery_title ml-5">Nutz n bolts <span class="event_details">Mechanical dept. synposium</span></p>
+        <h4 class="page-description text-center ascrolllink" id="looogos">Logos</h4>
+        <!-- <p class="gallery_title ml-5">Nutz n bolts <span class="event_details">Mechanical dept. synposium</span></p> -->
         <div class="tz-gallery">
 
             <div class="row">
@@ -413,6 +428,29 @@
     <script src="index.js"></script>
     <script type="text/javascript">
         baguetteBox.run('.tz-gallery');
+        // Slick js slider initialization
+        $(document).ready(function() {
+
+            if (isMobile.any()) {
+                $('.tile-wrapper').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    nextArrow: $('.next'),
+                    prevArrow: $('.prev'),
+                });
+            } else {
+                $('.tile-wrapper').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    nextArrow: $('.next'),
+                    prevArrow: $('.prev'),
+                });
+            }
+        });
     </script>
 
 </body>

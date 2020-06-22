@@ -32,26 +32,3 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-// Slick js slider initialization
-$(document).ready(function() {
-
-    if (isMobile.any()) {
-        $('.tile-wrapper').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
-        });
-    } else {
-        $('.tile-wrapper').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
-        });
-    }
-});
