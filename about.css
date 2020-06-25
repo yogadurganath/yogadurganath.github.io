@@ -17,17 +17,18 @@
 }
 
 #ResumeContainer1 {
-    background-color: #1A535C;
+    background: linear-gradient(to left, #FF00C7 0%, #00c7ff 100%);
     padding: 2vmin;
 }
 
 #ResumeContainer2 {
-    background-color: #4ECDC4;
+    background-color: #1A535C;
     padding: 2vmin;
+    color: white;
 }
 
 #ResumeContainer3 {
-    background-color: #ccf8cc;
+    background-color: #83c5be;
     padding: 2vmin;
 }
 
@@ -36,18 +37,36 @@
     padding: 2vmin;
 }
 
+#ResumeContainer4b {
+    background-color: #75DA8B;
+    padding: 2vmin;
+}
+
+#ResumeContainer4c {
+    background-color: #7389eb;
+    padding: 2vmin;
+    /* color: #Fff; */
+}
+
+#ResumeContainer4d {
+    background-color: #2C3335;
+    padding: 2vmin;
+    color: #Fff;
+}
+
 #ResumeContainer5 {
     background-color: #FFE66D;
+    padding: 2vmin;
+}
+
+#ResumeContainer5b {
+    background-color: #f8a64e;
     padding: 2vmin;
 }
 
 #ResumeContainer6 {
     background-color: #1A535C;
     padding: 2vmin;
-}
-
-#ResumeContainer6 h6,
-#ResumeContainer6 h5 {
     color: white;
 }
 
@@ -71,4 +90,24 @@
 
 .skilltcol td {
     padding-right: 8vw;
+}
+
+.proj_title {
+    font-size: 1.2rem;
+    color: #662e9b;
+}
+
+.proj_hed {
+    font-size: 1.2rem;
+    color: #d81159;
+}
+
+.cus-pub-link {
+    color: #2b2d42;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.cus-pub-link:hover {
+    color: black;
 }
