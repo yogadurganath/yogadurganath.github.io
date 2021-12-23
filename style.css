@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
 *[id].ascrolllink:before {
     display: block;
     content: " ";
     margin-top: -75px;
     height: 75px;
     visibility: hidden;
+}
+
+.mbshow{
+    display: none;
+}
+.glad{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+}
+.breif-des{
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 html {
@@ -23,7 +38,13 @@ p {
 .txt-int {
     text-indent: 2em;
 }
-
+.heythere{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    -webkit-text-stroke: .5px black;
+    -webkit-text-fill-color: white;
+}
 .material-icons.md-18 {
     font-size: 18px;
 }
@@ -63,11 +84,11 @@ p {
 }
 
 .intro {
-    background-image: url('/img/intro-bg4.jpg');
+    background-image: url('img/intro-bg4.jpg');
     background-size: 100vw 100vh;
 }
 
-.flex {
+.flex-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,31 +108,9 @@ p {
     height: 100%;
 }
 
-.button {
-    background-color: #17a2b8;
-    color: #fff;
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex.row {
-    flex-direction: row;
-}
-
-.flex.wrap {
-    flex-wrap: wrap;
-}
-
 .highlight {
     font-size: 7vmin;
     background: linear-gradient(to left, #FF00C7 0%, #00c7ff 100%);
-    /* -webkit-text-stroke-width: .1vmin;
-          -webkit-text-stroke-color: #fff; */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,7 +119,6 @@ p {
 section {
     padding: 70px 0 70px 0;
     color: #616161;
-    line-height: 11pt;
     position: relative;
 }
 
@@ -150,7 +148,6 @@ nav {
     height: 50px;
     width: 100%;
     background-color: #000;
-    border-bottom: 3px solid #04C2C9;
     text-align: left;
     z-index: 99;
 }
@@ -230,6 +227,25 @@ footer.footer .social-link:hover {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
     }
+    .mbhide{
+        display: none;
+    }
+    .mbshow.highlight{
+        display: inline;
+        font-size: 30px;
+        font-weight: bold;
+        background: -webkit-linear-gradient(#eb3349, #ffb88c);
+        font-family: 'Raleway-semibold';
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .glad{
+        font-size: 32px;
+    }
+    .im{
+     font-size: 18px;   
+    }
     footer.footer .social-link {
         display: block;
         height: 2rem;
@@ -241,19 +257,11 @@ footer.footer .social-link:hover {
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     }
     .intro {
-        background-image: url('/img/intro-bg-mbl.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('img/intro-bg-mbl.jpg');
+        
     }
-    .introtext {
-        font-size: 4vmin;
-    }
-    .highlight {
-        font-size: 6vmin;
-        font-weight: bold;
-        background: -webkit-linear-gradient(#eb3349, #ffb88c);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+    
+
 }
 
 .neon-wrapper {
@@ -265,7 +273,7 @@ footer.footer .social-link:hover {
 }
 
 .txt {
-    color: #ffffff;
+    color: #51E1ED;
     background: #000000;
     font-size: 1.2em;
     font-weight: bold;
@@ -284,31 +292,4 @@ footer.footer .social-link:hover {
     display: inline-flex;
     filter: brightness(200%);
     overflow: hidden;
-}
-
-.gradient {
-    background: linear-gradient(114.5793141156962deg, rgba(6, 227, 250, 1) 4.927083333333334%, rgba(229, 151, 64, 1) 97.84374999999999%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-}
-
-.dodge {
-    background: radial-gradient(circle, white, black 35%) center / 25% 25%;
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    right: 0;
-    bottom: 0;
-    mix-blend-mode: color-dodge;
-    animation: dodge-area 3s linear infinite;
-}
-
-@keyframes dodge-area {
-    to {
-        transform: translate(50%, 50%);
-    }
 }

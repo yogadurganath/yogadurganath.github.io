@@ -28,7 +28,7 @@
 .workslider .next {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: -50px;
     font-size: 2em;
     z-index: 2;
     cursor: pointer;
@@ -37,7 +37,7 @@
 .workslider .prev {
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: -50px;
     font-size: 2em;
     z-index: 2;
     cursor: pointer;
@@ -54,9 +54,9 @@
         margin: 5vmin;
     }
     .workslider .next {
-        right: 2vmin;
+        right: -3vmin;
     }
     .workslider .prev {
-        left: 2vmin;
+        left: -3vmin;
     }
 }
